@@ -54,6 +54,7 @@
 		435B16202B3D1B2500164606 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435B161F2B3D1B2500164606 /* LoginViewViewModel.swift */; };
 		435B16222B3D1B4600164606 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435B16212B3D1B4600164606 /* RegisterViewViewModel.swift */; };
 		435B16242B3D1B7A00164606 /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435B16232B3D1B7A00164606 /* ToDoListItemViewViewModel.swift */; };
+		435B16262B3D2A7000164606 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435B16252B3D2A7000164606 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		435B161F2B3D1B2500164606 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		435B16212B3D1B4600164606 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		435B16232B3D1B7A00164606 /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
+		435B16252B3D2A7000164606 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				435B160A2B3D176200164606 /* NewItemView.swift */,
 				435B160C2B3D177B00164606 /* LoginView.swift */,
 				435B160E2B3D179000164606 /* RegisterView.swift */,
+				435B16252B3D2A7000164606 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				435B160D2B3D177B00164606 /* LoginView.swift in Sources */,
+				435B16262B3D2A7000164606 /* HeaderView.swift in Sources */,
 				435B15BE2B3BCD5100164606 /* MainView.swift in Sources */,
 				435B16222B3D1B4600164606 /* RegisterViewViewModel.swift in Sources */,
 				435B16182B3D19A900164606 /* MainViewViewModel.swift in Sources */,
