@@ -16,6 +16,11 @@ struct RegisterVIew: View {
             HeaderView(title: "Register", subtitle: "Start organizing todos", angle: -15, background: .orange)
             
             Form {
+                if !viewModel.errorMessage.isEmpty {
+                    Text(viewModel.errorMessage)
+                        .foregroundStyle(.red)
+                }
+                
                 TextField("Full Name2", text: $viewModel.name)
                     .textFieldStyle(DefaultTextFieldStyle())
                 
