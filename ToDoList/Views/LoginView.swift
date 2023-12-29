@@ -16,12 +16,20 @@ struct LoginView: View {
                 // Header
                 HeaderView(title: "To Do List", subtitle: "Get things done", angle: 15, background: .pink)
                 
+                
+                
                 // Login Form
                 Form {
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundStyle(.red)
+                    } 
+                    
                     TextField("이메일", text: $viewModel.email)
                         .textFieldStyle(DefaultTextFieldStyle())
                         .textContentType(.emailAddress)
-                        .textInputAutocapitalization(.none)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled()
                     
                     SecureField("비밀번호", text: $viewModel.password)
                         .textFieldStyle(DefaultTextFieldStyle())
@@ -31,6 +39,7 @@ struct LoginView: View {
                         background: .blue
                     ) {
                         // Attempt log In
+                        viewModel.login()
                     }
                     
                 }
