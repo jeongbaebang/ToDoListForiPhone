@@ -37,7 +37,7 @@ class NewItemViewViewModel: ObservableObject {
             .collection("todos")
             .document(newId)
             .setData(newItem.asDictionary()) { err in
-                if let err = err {
+                if let err {
                     print("Error writing document: \(err.localizedDescription)")
                 } else {
                     print("Document successfully written!")
